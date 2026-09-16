@@ -13,19 +13,31 @@
     <title>OmniAI — Universal Super AI</title>
     <meta name="description" content="Barcha AI'larning aqli bitta ilovada: Chat, Vision, Ovozli suhbat, Rasm generatsiyasi va Shaxsiy Xotira." />
     
-    <!-- Google Fonts: Plus Jakarta Sans for sleek modern UI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/index-fuWmJVO1.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DoVlw07G.css">
+
+    <script>
+      // Xatolik yuz bersa ekranda ko'rsatish
+      window.addEventListener('error', function(e) {
+        console.error("Global Error:", e.error || e.message);
+        var errBox = document.getElementById('debug-error-box');
+        if (errBox) {
+          errBox.style.display = 'block';
+          errBox.innerText = 'Xatolik: ' + (e.message || 'Noma\'lum xato');
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="./assets/index-Zz4WklmD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DP72qgIY.css">
     <script type="module">import'data:text/javascript,if(!import.meta.resolve)throw Error("import.meta.resolve not supported")';import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
     <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
   </head>
   <body class="bg-[#090514] text-gray-100 overflow-x-hidden min-h-screen selection:bg-purple-600 selection:text-white" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+    <div id="debug-error-box" style="display:none;position:fixed;bottom:10px;left:10px;right:10px;background:#7f1d1d;color:#fecaca;padding:12px;border-radius:10px;font-size:12px;z-index:99999;"></div>
     <div id="root"></div>
     <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-    <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-C08BmVsA.js"></script>
-    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-ecriiEHN.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-Dx3HZAhL.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-LJClfW7m.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   </body>
 </html>
